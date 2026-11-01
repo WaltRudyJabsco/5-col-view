@@ -20,6 +20,13 @@ The source selection currently follows the ZMK `main` branch through the committ
 ZMK's reusable build-user-config workflow. These are the settings in this
 snapshot, rather than an instruction to upgrade firmware dependencies.
 
+## Observed build status
+
+The current ZMK `main` build does not recognize the committed `nice_nano_v2` board identifier and stops with `Invalid BOARD`. The hardware matrix needs a deliberate migration before a successful firmware build can be claimed.
+See the [CI run](https://github.com/WaltRudyJabsco/5-col-view/actions/runs/41268293021).
+The documentation change leaves the keymap, firmware settings, dependency
+selection and workflow bytes unchanged; it does not repair this existing setup.
+
 ## Build and use
 
 1. Edit the keymap or feature settings, then commit the configuration.
